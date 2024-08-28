@@ -1,16 +1,19 @@
-# This is a sample Python script.
+import torch
+from TTS.api import TTS
+import gradio as gr
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+print(torch.cuda.is_available())
+
+# device = "cuda" if torch.cuda.is_available() else "cpu"
+# device = "cpu" /
+device = "mps"
+
+def generate_audio(text="A journey of a thousand miles begins with a single step"):
+    tts = TTS(model_name='tts_models/en/ljspeech/fast_pitch').to(device)
+    #tts = TTS(model_name='tts_models/multilingual/multi-dataset/xtts_v1.1')
+    tts.tts_to_file(text=text, file_path="outputs/output.wav")
+    return "outputs/output.wav"
+
+print(generate_audio())
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
