@@ -12,10 +12,35 @@ def generate_audio(text="A journey of a thousand miles begins with a single step
     #tts = TTS(model_name='tts_models/en/ljspeech/fast_pitch').to(device)
     #tts = TTS(model_name='tts_models/multilingual/multi-dataset/xtts_v1.1', language_data='ar')
     tts = TTS(model_name='tts_models/multilingual/multi-dataset/xtts_v2')
+
+    # for arab
+    #tts = TTS(model_name='tts_models/multilingual/multi-dataset/bark')
+
+    # Arab
     tts.tts_to_file(text=text,
                     file_path="outputs/output.wav",
                     speaker="Abrahan Mack",
-                    language="arab")
+                    language="ar")
+
+    # spanish
+    # tts.tts_to_file(text=text,
+    #                 file_path="outputs/output.wav",
+    #                 speaker="Dionisio Schuyler",
+    #                 language="es")
+
+
+    # french
+    # tts.tts_to_file(text=text,
+    #                 file_path="outputs/output.wav",
+    #                 speaker="Abrahan Mack",
+    #                 language="fr")
+
+    # tts.tts_to_file(text=text,
+    #                 file_path="outputs/output.wav",
+    #                 speaker="Abrahan Mack",
+    #                 language="ar")
+
+
     return "outputs/output.wav"
 
 print(generate_audio())

@@ -2,6 +2,17 @@ This is for ML prototyping using Gradio
 
 Model :
 
- tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 \
+tts --list_models
+
+tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 \
     --list_speaker_idx
 
+
+
+ tts_models/multilingual/multi-dataset/your_tts
+
+ tts_models/multilingual/multi-dataset/bark
+
+
+ tts --model_name tts_models/multilingual/multi-dataset/bark \
+    --list_speaker_idx
