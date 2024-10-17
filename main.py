@@ -17,10 +17,10 @@ def generate_audio(text="A journey of a thousand miles begins with a single step
     #tts = TTS(model_name='tts_models/multilingual/multi-dataset/bark')
 
     # Arab
-    tts.tts_to_file(text=text,
-                    file_path="outputs/output.wav",
-                    speaker="Abrahan Mack",
-                    language="ar")
+    # tts.tts_to_file(text=text,
+    #                 file_path="outputs/output.wav",
+    #                 speaker="Abrahan Mack",
+    #                 language="ar")
 
     # spanish
     # tts.tts_to_file(text=text,
@@ -35,10 +35,11 @@ def generate_audio(text="A journey of a thousand miles begins with a single step
     #                 speaker="Abrahan Mack",
     #                 language="fr")
 
-    # tts.tts_to_file(text=text,
-    #                 file_path="outputs/output.wav",
-    #                 speaker="Abrahan Mack",
-    #                 language="ar")
+    # english
+    tts.tts_to_file(text=text,
+                    file_path="outputs/output.wav",
+                    speaker="Viktor Menelaos",
+                    language="en")
 
 
     return "outputs/output.wav"
@@ -55,11 +56,11 @@ demo.launch()
 
 #  > Available speaker ids: (Set --speaker_idx flag to one of these values to use the multi-speaker model.
 # dict_keys(['Claribel Dervla', 'Daisy Studious', 'Gracie Wise', 'Tammie Ema', 'Alison Dietlinde', 'Ana Florence',
-# 'Annmarie Nele', 'Asya Anara', 'Brenda Stern', 'Gitta Nikolina', 'Henriette Usha', 'Sofia Hellen',
-# 'Tammy Grit', 'Tanja Adelina', 'Vjollca Johnnie', 'Andrew Chipper', 'Badr Odhiambo', 'Dionisio Schuyler',
-# 'Royston Min', 'Viktor Eka', 'Abrahan Mack', 'Adde Michal', 'Baldur Sanjin', 'Craig Gutsy', 'Damien Black',
-# 'Gilberto Mathias', 'Ilkin Urbano', 'Kazuhiko Atallah', 'Ludvig Milivoj', 'Suad Qasim', 'Torcull Diarmuid',
-# 'Viktor Menelaos', 'Zacharie Aimilios', 'Nova Hogarth', 'Maja Ruoho', 'Uta Obando', 'Lidiya Szekeres', 'Chandra MacFarland',
-# 'Szofi Granger', 'Camilla Holmström', 'Lilya Stainthorpe', 'Zofija Kendrick', 'Narelle Moon', 'Barbora MacLean', 'Alexandra Hisakawa',
-# 'Alma María', 'Rosemary Okafor', 'Ige Behringer', 'Filip Traverse', 'Damjan Chapman', 'Wulf Carlevaro', 'Aaron Dreschner', 'Kumar Dahl',
-# 'Eugenio Mataracı', 'Ferran Simen', 'Xavier Hayasaka', 'Luis Moray', 'Marcos Rudaski'])
+# 'Annmarie Nele', 'Asya Anarollca Johnnie', 'Andrew Chipper', 'Badr Odhiambo', 'Dionisio Schuyler',
+# # 'Royston Min', 'Viktor Eka', 'Abrahan Mack', 'Adde Michal', 'Baldur Sanjin', 'Craig Gutsy', 'Damien Black',
+# # 'Gilberto Mathias', 'Ilkin Urbano', 'Kazuhiko Atallah', 'Ludvig Milivoj', 'Suad Qasim', 'Torcull Diarmuid',
+# # 'Viktor Menelaos', 'Zacharie Aimilios', 'Nova Hogarth', 'Maja Ruoho', 'Uta Obando', 'Lidiya Szekeres', 'Chandra MacFarland',
+# # 'Szofi Granger', 'Camilla Holmström', 'Lilya Stainthorpe', 'Zofija Kendrick', 'Narelle Moon', 'Barbora MacLean', 'Alexandra Hisakawa',
+# # 'Alma María', 'Rosemary Okafor', 'Ige Behringer', 'Filip Traverse', 'Damjan Chapman', 'Wulf Carlevaro', 'Aaron Dreschner', 'Kumar Dahl',
+# # 'Eugenio Mataracı', 'Ferran Simen', 'Xavier Hayasaka', 'Luis Moray', 'Marcos Rudaski'])a', 'Brenda Stern', 'Gitta Nikolina', 'Henriette Usha', 'Sofia Hellen',
+# 'Tammy Grit', 'Tanja Adelina', 'Vj
